@@ -63,75 +63,60 @@
 					 "We love the Enterprise. She's such a majestic ship, tearing through space at warp speed like it's nothing. Beneath that shiny, unruffled surface, everybody's favorite Constitution Class vessel is incredibly complicated. ",
 					 "We've had a screen-accurate prop replica ST:TNG badge in our closet for a while. The only thing it was missing was the ability to emit the classic communicator chirp sound effect when we pressed it. ",
 					 "Counselor Troi has been known, for most of her career actually, to wear not-the-standard Starfleet uniform, so we're branching out in our offerings, too. These varsity jackets are a nice change of pace from the standard Starfleet issue. This uniform is made for cooler climates and more relaxed atmospheres (social, that is, and not planetary).",
-					 "Aboard the U.S.S. Enterprise all of your needs are taken care of by the computer, and so you can order just about anything you want to drink from the replicator. There is a price to pay for this, though: the paradox of too many choices; the paralysis that comes with infinite possibility. The reason Jean-Luc Picard always orders "tea, Earl Grey, hot" is the same reason why some CEOs have a closet full of just one outfit: it saves valuable time and brain space to not make a choice and just stick with something you know you'll like. Time and brainspace you need as the captain of Starfleet's flagship.",
-					 "Congratulations on your graduation from the Academy! To commemorate your achievement, and prepare you for your assignment on board the U.S.S. Enterprise NCC-1701, you have been issued an official Starfleet phaser pistol. This new model is comprised of two parts: a removable Type 1 "cricket" phaser and a Type 2 pistol grip."]
+					 "Aboard the U.S.S. Enterprise all of your needs are taken care of by the computer, and so you can order just about anything you want to drink from the replicator. There is a price to pay for this, though: the paradox of too many choices; the paralysis that comes with infinite possibility. The reason Jean-Luc Picard always orders tea, Earl Grey, hot is the same reason why some CEOs have a closet full of just one outfit: it saves valuable time and brain space to not make a choice and just stick with something you know you'll like. Time and brainspace you need as the captain of Starfleet's flagship.",
+					 "Congratulations on your graduation from the Academy! To commemorate your achievement, and prepare you for your assignment on board the U.S.S. Enterprise NCC-1701, you have been issued an official Starfleet phaser pistol. This new model is comprised of two parts: a removable Type 1 cricket phaser and a Type 2 pistol grip."]
  
  function loadDoctorWho() {
-	//Run loop here
-    loadDoctorWhoRatings();
- }
-
- function loadDoctorWhoRatings() {
-	document.getElementById("item1Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9734';
-	document.getElementById("item2Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
-	document.getElementById("item3Rating").innerHTML = '&#9733; &#9733; &#9733; &#9734; &#9734';
-	document.getElementById("item4Rating").innerHTML = '&#9733; &#9733; &#9734; &#9734; &#9734';
-	document.getElementById("item5Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
-	document.getElementById("item6Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
+	 var elementNumber = "";
+	for (var i = 0; i < 7; i++)	{
+		elementNumber = i + 1;
+		document.getElementById("item" + elementNumber + "Picture").src = doctorWhoPictures[i];
+		document.getElementById("item" + elementNumber + "Title").innerHTML = doctorWhoTitles[i];
+		document.getElementById("item" + elementNumber + "Text").innerHTML = doctorWhoText[i];
+		document.getElementById("item" + elementNumber + "Price").innerHTML = doctorWhoPrices[i];
+	}
  }
 
 function loadStarWars(){
-	//Run loop here
-	loadStarWarsRatings();
+	 var elementNumber = "";
+	for (var i = 0; i < 7; i++)	{
+		elementNumber = i + 1;
+		document.getElementById("item" + elementNumber + "Picture").src = starwarsPictures[i];
+		document.getElementById("item" + elementNumber + "Title").innerHTML = starwarsTitles[i];
+		document.getElementById("item" + elementNumber + "Text").innerHTML = starwarsText[i];
+		document.getElementById("item" + elementNumber + "Price").innerHTML = starwarsPrices[i];
+	}
 }
 
-function loadStarWarsRatings(){
-  document.getElementById("item1Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
-  document.getElementById("item2Rating").innerHTML = '&#9733; &#9733; &#9734; &#9734; &#9734';
-  document.getElementById("item3Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9734';
-  document.getElementById("item4Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
-  document.getElementById("item5Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
-  document.getElementById("item6Rating").innerHTML = '&#9733; &#9733; &#9733; &#9734; &#9734';
-}
-
-function loadmarvel(){
-	//Run loop here
-	loadmarvelRatings();
-}
-
-function loadmarvelRatings(){
-  document.getElementById("item1Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
-  document.getElementById("item2Rating").innerHTML = '&#9733; &#9733; &#9734; &#9734; &#9734';
-  document.getElementById("item3Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9734';
-  document.getElementById("item4Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
-  document.getElementById("item5Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
-  document.getElementById("item6Rating").innerHTML = '&#9733; &#9733; &#9733; &#9734; &#9734';
+function loadMarvel(){
+	 var elementNumber = "";
+	for (var i = 0; i < 7; i++)	{
+		elementNumber = i + 1;
+		document.getElementById("item" + elementNumber + "Picture").src = marvelPictures[i];
+		document.getElementById("item" + elementNumber + "Title").innerHTML = marvelTitles[i];
+		document.getElementById("item" + elementNumber + "Text").innerHTML = marvelText[i];
+		document.getElementById("item" + elementNumber + "Price").innerHTML = marvelPrices[i];
+	}
 }
 
 function loadDCComics(){
-	//Run loop here
-	loadDCComicsRatings();
-}
-
-function loadDCComicsRatings(){
-  document.getElementById("item1Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
-  document.getElementById("item2Rating").innerHTML = '&#9733; &#9733; &#9734; &#9734; &#9734';
-  document.getElementById("item3Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9734';
-  document.getElementById("item4Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
-  document.getElementById("item5Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
-  document.getElementById("item6Rating").innerHTML = '&#9733; &#9733; &#9733; &#9734; &#9734';
+		 var elementNumber = "";
+	for (var i = 0; i < 7; i++)	{
+		elementNumber = i + 1;
+		document.getElementById("item" + elementNumber + "Picture").src = dcComicsPictures[i];
+		document.getElementById("item" + elementNumber + "Title").innerHTML = dcComicsTitles[i];
+		document.getElementById("item" + elementNumber + "Text").innerHTML = dcComicsText[i];
+		document.getElementById("item" + elementNumber + "Price").innerHTML = dcComicsPrices[i];
+	}
 }
 
 function loadStarTrek(){
-	//Run loop here
-	loadStarTrekRatings();
-}
-
-function loadStarTrekRatings(){
-  document.getElementById("item1Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
-  document.getElementById("item2Rating").innerHTML = '&#9733; &#9733; &#9734; &#9734; &#9734';
-  document.getElementById("item3Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9734';
-  document.getElementById("item4Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
-  document.getElementById("item5Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
-  document.getElementById("item6Rating").innerHTML = '&#9733; &#9733; &#9733; &#9734; &#9734';
+	 var elementNumber = "";
+	for (var i = 0; i < 7; i++)	{
+		elementNumber = i + 1;
+		document.getElementById("item" + elementNumber + "Picture").src = starTrekPictures[i];
+		document.getElementById("item" + elementNumber + "Title").innerHTML = starTrekTitles[i];
+		document.getElementById("item" + elementNumber + "Text").innerHTML = starTrekText[i];
+		document.getElementById("item" + elementNumber + "Price").innerHTML = starTrekPrices[i];
+	}
 }
