@@ -6,7 +6,61 @@
 
  *    Filename communityJava.js
  */
- 
+var items = [];
+	items.push({
+		title: "Pac-Man Plushies",
+		price: "$19.99",
+		description: "Comfy Pac-Man pillows my Grandma made.",
+		rating: '&#9733; &#9733; &#9733; &#9733; &#9734',
+		source: "./images/craft1.jpg"
+	});
+	items.push({
+		title: "FF7 Cloud Pillows",
+		price: "$29.99",
+		description: "Super DETAILED Cloud, complete with Buster Sword.",
+		rating: '&#9733; &#9733; &#9733; &#9733; &#9733',
+		source: "./images/craft2.jpg"
+	});
+	items.push({
+		title: "Hearthstone PaperWeights",
+		price: "$7.99",
+		description: "Keep your work held down with these 3-D printed Hearthstones!",
+		rating: '&#9733; &#9733; &#9733; &#9734; &#9734',
+		source: "./images/craft3.jpg"
+	});
+	items.push({
+		title: "Yoda Coaster",
+		price: "$4.99",
+		description: "My girlfriend makes these coasters for my friends and I. Great for keeping coffee rings off my desk in style!",
+		rating: '&#9733; &#9733; &#9733; &#9734; &#9734',
+		source: "./images/craft4.jpg"
+	});
+	items.push({
+		title: "Mario Utencil Holder",
+		price: "$59.99",
+		description: "Arts and crafts holder for any lover of Mario. (made-to-order)",
+		rating: '&#9733; &#9733; &#9733; &#9733; &#9734',
+		source: "./images/craft5.jpg"
+	});
+	items.push({
+		title: "Pokemon Ornaments",
+		price: "$9.99",
+		description: "Dont let your christmas tree be lame this year. Not only can we make these, we handle requests as well!",
+		rating: '&#9733; &#9733; &#9733; &#9733; &#9733',
+		source: "./images/craft6.jpg"
+	});
+
+function setModal(itemNumber){
+    document.getElementById("modalImg").src = items[itemNumber].source;
+    document.getElementById("modalTitle").innerHTML = items[itemNumber].title;
+    document.getElementById("modalDescription").innerHTML = items[itemNumber].description;
+    document.getElementById("modalPrice").innerHTML = items[itemNumber].price;
+    document.getElementById("modalRating").innerHTML = items[itemNumber].rating;
+}
+
+function changeImage(image_id) {
+    document.getElementById("mainSlide1").src = "./images/" + image_id + ".jpg";
+}
 
  function loadItems() {
 	 loadItem1();
