@@ -33,7 +33,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="index.html">Home
                 <span class="sr-only">(current)</span>
               </a>
@@ -44,7 +44,7 @@
             <li class="nav-item">
               <a class="nav-link" href="services.html">Services</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="community.html">Community</a>
             </li>
 			<li class="nav-item">
@@ -54,7 +54,6 @@
         </div>
       </div>
     </nav>
-
     <!-- Page Content -->
     <div class="container">
 
@@ -116,36 +115,12 @@
 		  
           <div class="row">
 
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4" data-toggle="modal" data-target="#myModal" onclick="setModal(0)">
               <div class="card h-100">
                 <a href="#"><img id="craft1" class="card-img-top" src="./images/craft1.jpg" onclick="loadItem1()" alt=""></a>
                 <div class="card-body">
                   <h4 class="card-title" onclick="loadItem1()">
-	              <!-- Modal -->
-				  <div class="container">
-					  <h2>Pac-Man Pillows</h2>
-					  <!-- Trigger the modal with a button -->
-					  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Details</button>
-					  <!-- Modal -->
-					  <div class="modal fade" id="myModal" role="dialog">
-						<div class="modal-dialog">
-						  <!-- Modal content-->
-						  <div class="modal-content">
-							<div class="modal-header">  
-							  <h4 class="modal-title">Pac-Man Pillows</h4>
-							  <button type="button" class="close" data-dismiss="modal">&times;</button>
-							</div>
-							<div class="modal-body">
-								<a href="#"><img src="images\craft1.jpg" </img></a>
-							  <p></p>
-							</div>
-							<div class="modal-footer">
-							</div>
-						  </div>
-						</div>
-					  </div>	  
-					</div>
-					<!-- end Modal -->
+				  <p>Pac-Man Plushies</P>
                     <a href="#" id="item1Title"></a>
                   </h4>
                   <h5 id="item1Price"></h5>
@@ -157,36 +132,12 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4" data-toggle="modal" data-target="#myModal" onclick="setModal(1)">
               <div class="card h-100">
                 <a href="#"><img id="craft2" class="card-img-top" src="./images/craft2.jpg" onclick="loadItem2()" alt=""></a>
                 <div class="card-body">
                   <h4 class="card-title" onclick="loadItem2()">
-				  <!-- Modal -->
-				  <div class="container">
-					  <h2>FF7 Cloud Plushie</h2>
-					  <!-- Trigger the modal with a button -->
-					  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Details</button>
-					  <!-- Modal -->
-					  <div class="modal fade" id="myModal" role="dialog">
-						<div class="modal-dialog">
-						  <!-- Modal content-->
-						  <div class="modal-content">
-							<div class="modal-header">
-							  <button type="button" class="close" data-dismiss="modal">&times;</button>
-							  <h4 class="modal-title">FF7 Cloud Plushie</h4>
-							</div>
-							<div class="modal-body">
-								<a href="#"><img src="images\craft2.jpg" </img></a>
-							  <p></p>
-							</div>
-							<div class="modal-footer">
-							</div>
-						  </div>
-						</div>
-					  </div>	  
-					</div>
-					<!-- end Modal -->
+				  <p>FF7 Cloud Pillows</p>
                     <a href="#" id="item2Title"></a>
                   </h4>
                   <h5 id="item2Price"></h5>
@@ -198,36 +149,12 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4" data-toggle="modal" data-target="#myModal" onclick="setModal(2)">
               <div class="card h-100">
                 <a href="#"><img id="craft3" class="card-img-top" src="./images/craft3.jpg" onclick="loadItem3()" alt=""></a>
                 <div class="card-body">
                   <h4 class="card-title" onclick="loadItem3()">
-				  				  <!-- Modal -->
-				  <div class="container">
-					  <h2>Hearthstone Paper Weights</h2>
-					  <!-- Trigger the modal with a button -->
-					  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Details</button>
-					  <!-- Modal -->
-					  <div class="modal fade" id="myModal" role="dialog">
-						<div class="modal-dialog">
-						  <!-- Modal content-->
-						  <div class="modal-content">
-							<div class="modal-header">
-							  <button type="button" class="close" data-dismiss="modal">&times;</button>
-							  <h4 class="modal-title">Hearthstone Paper Weights</h4>
-							</div>
-							<div class="modal-body">
-								<a href="#"><img src="images\craft3.jpg" </img></a>
-							  <p></p>
-							</div>
-							<div class="modal-footer">
-							</div>
-						  </div>
-						</div>
-					  </div>	  
-					</div>
-					<!-- end Modal -->
+				  <p>Hearthstone PaperWeights</p>
                     <a href="#" id="item3Title"></a>
                   </h4>
                   <h5 id="item3Price"></h5>
@@ -239,36 +166,12 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4" data-toggle="modal" data-target="#myModal" onclick="setModal(3)">
               <div class="card h-100">
                 <a href="#"><img id="craft4" class="card-img-top" src="./images/craft4.jpg" onclick="loadItem4()" alt=""></a>
                 <div class="card-body">
                   <h4 class="card-title" onclick="loadItem4()">
-				  				  <!-- Modal -->
-				  <div class="container">
-					  <h2>Yoda Coaster</h2>
-					  <!-- Trigger the modal with a button -->
-					  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Details</button>
-					  <!-- Modal -->
-					  <div class="modal fade" id="myModal" role="dialog">
-						<div class="modal-dialog">
-						  <!-- Modal content-->
-						  <div class="modal-content">
-							<div class="modal-header">
-							  <button type="button" class="close" data-dismiss="modal">&times;</button>
-							  <h4 class="modal-title">Yoda Coaster</h4>
-							</div>
-							<div class="modal-body">
-								<a href="#"><img src="images\craft4.jpg" </img></a>
-							  <p></p>
-							</div>
-							<div class="modal-footer">
-							</div>
-						  </div>
-						</div>
-					  </div>	  
-					</div>
-					<!-- end Modal -->
+				  <p>Yoda Coaster</p>
                     <a href="#" id="item4Title"></a>
                   </h4>
                   <h5 id="item4Price"></h5>
@@ -280,36 +183,12 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4" data-toggle="modal" data-target="#myModal" onclick="setModal(4)">
               <div class="card h-100">
                 <a href="#"><img id="craft5" class="card-img-top" src="./images/craft5.jpg" onclick="loadItem5()" alt=""></a>
                 <div class="card-body">
                   <h4 class="card-title" onclick="loadItem5()">
-				  				  <!-- Modal -->
-				  <div class="container">
-					  <h2>Mario Utencil Holder</h2>
-					  <!-- Trigger the modal with a button -->
-					  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Details</button>
-					  <!-- Modal -->
-					  <div class="modal fade" id="myModal" role="dialog">
-						<div class="modal-dialog">
-						  <!-- Modal content-->
-						  <div class="modal-content">
-							<div class="modal-header">
-							  <button type="button" class="close" data-dismiss="modal">&times;</button>
-							  <h4 class="modal-title">Mario Utencil Holder</h4>
-							</div>
-							<div class="modal-body">
-								<a href="#"><img src="images\craft5.jpg" </img></a>
-							  <p></p>
-							</div>
-							<div class="modal-footer">
-							</div>
-						  </div>
-						</div>
-					  </div>	  
-					</div>
-					<!-- end Modal -->
+				  <p>Mario Utencil Holder</p>
                     <a href="#" id="item5Title"></a>
                   </h4>
                   <h5 id="item5Price"></h5>
@@ -321,36 +200,12 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4" data-toggle="modal" data-target="#myModal" onclick="setModal(5)">
               <div class="card h-100">
                 <a href="#"><img id="craft6" class="card-img-top" src="./images/craft6.jpg" onclick="loadItem6()" alt=""></a>
                 <div class="card-body">
                   <h4 class="card-title" onclick="loadItem6()">
-				  				  <!-- Modal -->
-				  <div class="container">
-					  <h2>Pokemon Ornaments</h2>
-					  <!-- Trigger the modal with a button -->
-					  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Details</button>
-					  <!-- Modal -->
-					  <div class="modal fade" id="myModal" role="dialog">
-						<div class="modal-dialog">
-						  <!-- Modal content-->
-						  <div class="modal-content">
-							<div class="modal-header">
-							  <button type="button" class="close" data-dismiss="modal">&times;</button>
-							  <h4 class="modal-title">Pokemon Ornaments</h4>
-							</div>
-							<div class="modal-body">
-								<a href="#"><img src="images\craft6.jpg" </img></a>
-							  <p></p>
-							</div>
-							<div class="modal-footer">
-							</div>
-						  </div>
-						</div>
-					  </div>	  
-					</div>
-					<!-- end Modal -->
+				  <p>Pokemon Ornaments</p>
                     <a href="#" id="item6Title"></a>
                   </h4>
                   <h5 id="item6Price"></h5>
@@ -382,11 +237,44 @@
       </div>
       <!-- /.container -->
     </footer>
-	<script type="text/javascript">
-	 function changeImage(image_id) {
-	document.getElementById("mainSlide1").src = "./images/crafts/" + image_id + ".jpg";
-		}
-	</script>
+
+
+    <!-- Begin Modal Code -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Nerd Out!</h4>
+          </div>
+          <div class="modal-body">
+
+            <div class="card h-100">
+              <a href="#"><img id="modalImg" class="card-img-top" src="" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title" onclick="loadItem3()">
+                  <p id="modalTitle"></p>
+                  <!--<a href="#" id="item3Title"></a>-->
+                </h4>
+                <h5 id="modalPrice"></h5>
+                <p class="card-text" id="modalDescription"></p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted" id="modalRating"></small>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- End Modal -->
+
   </body>
 
 </html>
