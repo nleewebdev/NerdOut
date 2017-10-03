@@ -2,7 +2,7 @@
  *    Nerd Out! shop
  *    Variables and functions
  *    Author: Mark Rone
- *    Date:   9.18.17
+ *    Date:   9.15.17
 
  *    Filename: shopJava.js
  */
@@ -42,81 +42,44 @@
 				   "Pentz is referring to the pendants found at archaeological digs, not actual-size hammers. But actual-size hammers ALSO offer protection, even moreso than a little pendant. Swing this puppy, and we promise you'll feel protected. Weighing almost 4 lbs. this creation from Museum Replicas features a genuine hand-stained wood shaft studded with brass rivets, a handle with a contoured suede-wrap grip, and even a Norse motif on the end cap. But that's not what you're here for. You're here for the gorgeous hammerhead with the Norse motif forged from one solid piece of metal. It makes us want to say, We're not worthy!",
 				   "Unite the Avengers on your tree! This 3-inch resin Iron Man ornament features the classic red-and-yellow suit, standing at the ready to deflect any attack the Marvel Universe might try to make on your holiday. Hang him up on your tree using the included coordinating ribbon hanging loop, and you'll have a very merry Marvel Christmas!"]
  
- var dcComicsPictures = ["images/dc_Harley_Quinn_Mallet.jpg", "images/dc_Batman_Mirror.jpg", "images/dc_wonder_woman_stash_bag.jpg", 
-						 "images/dc_glantern_light_buckle.jpg", "images/sc_flash_captain_cold_unmasked_pop_vinyl_fig.jpg", "images/dc_teen_titans_day_kids_tee_mb.jpg"]
- var dcComicsTitles = ["Harley Quinn Mallet", "Batman Mirror", "Wonder Woman Stash Bag", "Green Lantern Light Up Buckle", 
-					   "Flash TV Pop! Vinyl Figure - Captain Cold Unmasked EE Exclusive", "Teen Titans Go! Perfect Day Kids' T-Shirt"]
- var dcComicsPrices = ["$29.99", "$29.99", "$4.99", "$29.99", "$11.99", "$14.99"]
- var dcComicsText = ["Mario in Donkey Kong. Thor. Harley Quinn. What do these three have in common? That's right. When you ask them to put the hammer down, they put the hammer down. Or, in Harley's case, the mallet.",
-					 "You are vengeance, you are the night, you are... probably in serious need of a comb right about now. After all, you've been out all night fighting crime on the streets of Gotham, but you're expected to show up on time and presentable to an 8am board meeting at Wayne Enterprises, and you'll have to do it all again tonight. Who has time to blow dry when you've got a megacorporation to run during the day and streets to clean up at night?",
-					 "You know how when you try to sneak a theater-sized box of candy that you procured at your local grocery store for a buck into the movies so you don't have to go into debt for your snack bought at the theater itself, it rattles and makes all sorts of racket and gives you away? Well, we've found the perfect use for this Wonder Woman Stash Bag. We're packing ours full of Skittles for seeing Wonder Woman on the big screen.",
-					 "Imagine if the buckle on your belt wasn't just a large, eye-catching, and particularly attractive accessory - but instead it was an intergalactic peacekeeping weapon. A weapon limited only by your imagination. A weapon powered by the force of your will... or a micro-USB cable. ",
-					 "Captain Cold can give Flash a run for his money. For someone with no superpowers, he certainly gives the guy who does have superpowers a lot of trouble. He's like Batman - except he doesn't have a lot of money, and he doesn't have nearly as many gadgets, and he doesn't have a sidekick named Robin.... Okay, he isn't like Batman, but he is still pretty awesome... for a villain we mean.",
-					 "In between all the hustle and bustle of kicking the butts of bad guys, sometimes you just need a chill day. It's hard to get much more chill than eating, sleeping, and playing video games. Come to think of it, whether you're beating up bad guys on the regular or not, that is just an all-around-perfect day."]
- 
- var starTrekPictures = ["images/star_trek_communicator.jpg", "images/star_trek_uss_enterprise_coasters.jpg", "images/star_trek_bluetooth_com_badge.jpg", 
-						 "images/star_trek_varsity_jackets_all.jpg", "images/star_trek_mugs.jpg", "images/star_trek_movie_phaser.jpg"]
- var starTrekTitles = ["Star Trek: TOS Bluetooth® Communicator", "Star Trek U.S.S. Enterprise NCC-1701 Coasters Set of 6", "Star Trek TNG Bluetooth® ComBadge - Exclusive", 
-					   "Star Trek The Next Generation Varsity Hoodie", "Exclusive Star Trek Next Gen Mugs", ""]
- var starTrekPrices = ["$149.99", "$19.99", "$63.99", "$55.99", "$2.99", "$7.99"]
- var starTrekText = ["Admit it: you've wanted this from the first time you saw a flip phone back in the '90s. Why did it take 20 years before we could deliver it to you? Look, it's technology from the FUTURE. These things take time to get right, okay? ",
-					 "We love the Enterprise. She's such a majestic ship, tearing through space at warp speed like it's nothing. Beneath that shiny, unruffled surface, everybody's favorite Constitution Class vessel is incredibly complicated. ",
-					 "We've had a screen-accurate prop replica ST:TNG badge in our closet for a while. The only thing it was missing was the ability to emit the classic communicator chirp sound effect when we pressed it. ",
-					 "Counselor Troi has been known, for most of her career actually, to wear not-the-standard Starfleet uniform, so we're branching out in our offerings, too. These varsity jackets are a nice change of pace from the standard Starfleet issue. This uniform is made for cooler climates and more relaxed atmospheres (social, that is, and not planetary).",
-					 "Aboard the U.S.S. Enterprise all of your needs are taken care of by the computer, and so you can order just about anything you want to drink from the replicator. There is a price to pay for this, though: the paradox of too many choices; the paralysis that comes with infinite possibility. The reason Jean-Luc Picard always orders tea, Earl Grey, hot is the same reason why some CEOs have a closet full of just one outfit: it saves valuable time and brain space to not make a choice and just stick with something you know you'll like. Time and brainspace you need as the captain of Starfleet's flagship.",
-					 "Congratulations on your graduation from the Academy! To commemorate your achievement, and prepare you for your assignment on board the U.S.S. Enterprise NCC-1701, you have been issued an official Starfleet phaser pistol. This new model is comprised of two parts: a removable Type 1 cricket phaser and a Type 2 pistol grip."]
- 
  function loadDoctorWho() {
-	 var elementNumber = "";
-	for (var i = 0; i < 7; i++)	{
-		elementNumber = i + 1;
-		document.getElementById("item" + elementNumber + "Picture").src = doctorWhoPictures[i];
-		document.getElementById("item" + elementNumber + "Title").innerHTML = doctorWhoTitles[i];
-		document.getElementById("item" + elementNumber + "Text").innerHTML = doctorWhoText[i];
-		document.getElementById("item" + elementNumber + "Price").innerHTML = doctorWhoPrices[i];
-	}
+	//Run loop here
+    loadDoctorWhoRatings();
+ }
+
+ function loadDoctorWhoRatings() {
+	document.getElementById("item1Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9734';
+	document.getElementById("item2Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
+	document.getElementById("item3Rating").innerHTML = '&#9733; &#9733; &#9733; &#9734; &#9734';
+	document.getElementById("item4Rating").innerHTML = '&#9733; &#9733; &#9734; &#9734; &#9734';
+	document.getElementById("item5Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
+	document.getElementById("item6Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
  }
 
 function loadStarWars(){
-	 var elementNumber = "";
-	for (var i = 0; i < 7; i++)	{
-		elementNumber = i + 1;
-		document.getElementById("item" + elementNumber + "Picture").src = starwarsPictures[i];
-		document.getElementById("item" + elementNumber + "Title").innerHTML = starwarsTitles[i];
-		document.getElementById("item" + elementNumber + "Text").innerHTML = starwarsText[i];
-		document.getElementById("item" + elementNumber + "Price").innerHTML = starwarsPrices[i];
-	}
+	//Run loop here
+	loadStarWarsRatings();
+}
+
+function loadStarWarsRatings(){
+  document.getElementById("item1Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
+  document.getElementById("item2Rating").innerHTML = '&#9733; &#9733; &#9734; &#9734; &#9734';
+  document.getElementById("item3Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9734';
+  document.getElementById("item4Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
+  document.getElementById("item5Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
+  document.getElementById("item6Rating").innerHTML = '&#9733; &#9733; &#9733; &#9734; &#9734';
 }
 
 function loadMarvel(){
-	 var elementNumber = "";
-	for (var i = 0; i < 7; i++)	{
-		elementNumber = i + 1;
-		document.getElementById("item" + elementNumber + "Picture").src = marvelPictures[i];
-		document.getElementById("item" + elementNumber + "Title").innerHTML = marvelTitles[i];
-		document.getElementById("item" + elementNumber + "Text").innerHTML = marvelText[i];
-		document.getElementById("item" + elementNumber + "Price").innerHTML = marvelPrices[i];
-	}
+	//Run loop here
+	loadMarvelRatings();
 }
 
-function loadDCComics(){
-		 var elementNumber = "";
-	for (var i = 0; i < 7; i++)	{
-		elementNumber = i + 1;
-		document.getElementById("item" + elementNumber + "Picture").src = dcComicsPictures[i];
-		document.getElementById("item" + elementNumber + "Title").innerHTML = dcComicsTitles[i];
-		document.getElementById("item" + elementNumber + "Text").innerHTML = dcComicsText[i];
-		document.getElementById("item" + elementNumber + "Price").innerHTML = dcComicsPrices[i];
-	}
-}
-
-function loadStarTrek(){
-	 var elementNumber = "";
-	for (var i = 0; i < 7; i++)	{
-		elementNumber = i + 1;
-		document.getElementById("item" + elementNumber + "Picture").src = starTrekPictures[i];
-		document.getElementById("item" + elementNumber + "Title").innerHTML = starTrekTitles[i];
-		document.getElementById("item" + elementNumber + "Text").innerHTML = starTrekText[i];
-		document.getElementById("item" + elementNumber + "Price").innerHTML = starTrekPrices[i];
-	}
+function loadMarvelRatings(){
+  document.getElementById("item1Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
+  document.getElementById("item2Rating").innerHTML = '&#9733; &#9733; &#9734; &#9734; &#9734';
+  document.getElementById("item3Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9734';
+  document.getElementById("item4Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
+  document.getElementById("item5Rating").innerHTML = '&#9733; &#9733; &#9733; &#9733; &#9733';
+  document.getElementById("item6Rating").innerHTML = '&#9733; &#9733; &#9733; &#9734; &#9734';
 }
